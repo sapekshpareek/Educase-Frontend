@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Box id="home"
+    <Box
+      id="home"
       display="flex"
       justifyContent="flex-start"
       alignItems="flex-end"
@@ -16,18 +17,23 @@ export default function Home() {
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Welcome to PopX
         </Typography>
-        <Typography variant="body1" >Lorem ipsum dolor sit amet,</Typography>
-        <Typography variant="body1" mb={4}>
+        <Typography color="#74777b" variant="h6">Lorem ipsum dolor sit amet,</Typography>
+        <Typography color="#74777b" variant="h6" mb={4}>
           consectetur adipiscing elit. Proin at.
         </Typography>
         <Link href="/signup" passHref>
-          <Button variant="contained" color="secondary" fullWidth sx={{ mb: 2, p: 1.5 }}>
-            Create Account
+          <Button
+            variant="contained"
+            color="secondary"
+            fullWidth
+            sx={{ mb: 2, p: 2 }}
+          >
+            <Typography fontWeight="bold">Create Account</Typography>
           </Button>
         </Link>
         <Link href="/login" passHref>
-          <Button variant="outlined" color="secondary" fullWidth sx={{ p: 2 }}>
-            Already Registered? Login
+          <Button variant="contained"  fullWidth sx={{ p: 2, background: '#cebafb' }}>
+            <Typography fontWeight="bold" color="#000000">Already Registered? Login</Typography>
           </Button>
         </Link>
       </Box>

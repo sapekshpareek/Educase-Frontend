@@ -21,8 +21,11 @@ export default function Signup() {
       justifyContent="space-between"
     >
       <Box>
-        <Typography variant="h3" fontWeight="bold" mb={3}>
-          Create your PopX account
+        <Typography variant="h4" fontWeight="bold">
+          Create your
+        </Typography>
+        <Typography variant="h4" fontWeight="bold" mb={3}>
+          PopX account
         </Typography>
         <Box component="form" display="flex" flexDirection="column" gap={2}>
           <TextField
@@ -64,8 +67,8 @@ export default function Signup() {
           <FormControl required color="secondary">
             <FormLabel color="secondary">Are you an Agency?</FormLabel>
             <RadioGroup row>
-              <FormControlLabel value="yes" control={<Radio />} label="Yes" />
-              <FormControlLabel value="no" control={<Radio />} label="No" />
+              <FormControlLabel value="yes" control={<Radio color="secondary"/>} label="Yes" />
+              <FormControlLabel value="no" control={<Radio color="secondary"/>} label="No" />
             </RadioGroup>
           </FormControl>
         </Box>
